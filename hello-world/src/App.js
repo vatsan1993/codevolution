@@ -5,11 +5,15 @@ import { Component } from "react";
 
 //When using named export we need {} with exact name
 import { Greet } from "./components/Greet";
+
+import Welcome from "./components/Welcome";
+
 class App extends Component{
   render() {
     return <div className='App'>
     {/* <MyComponent /> */}
     <Greet />
+    <Welcome />
   </div>
   }
 
