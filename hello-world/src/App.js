@@ -22,7 +22,7 @@ class App extends Component{
     {/* <Hello/> */}
 
     {/* using Greet component multiple times with props and chidren */}
-    {/* <Greet name='Bruce' heroName='Batman'>
+    <Greet name='Bruce' heroName='Batman'>
       <p>The Greatest Super hero ever</p>
     </Greet>
     <Greet name='Clark'heroName='Superman'>
@@ -32,12 +32,12 @@ class App extends Component{
 
     <Welcome name='Bruce' heroName='Batman'/>
     <Welcome name='Clark'heroName='Superman'></Welcome>
-    <Welcome name='Diana' heroName='Wonder Woman'/> */}
+    <Welcome name='Diana' heroName='Wonder Woman'/>
 
 
     {/* Message Component with state */}
-    <Message/>
-    <Counter />
+    {/* <Message/>
+    <Counter /> */}
   </div>
   }
 

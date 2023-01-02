@@ -20,6 +20,7 @@ class Counter extends Component {
 
     // better way of setting a state
     increment(){
+
         this.setState(prevState=>{
             return {count:prevState.count+1}
         },()=>{
@@ -27,6 +28,9 @@ class Counter extends Component {
             }
         )
     }
+
+
+
 
      // changing state using the props
     //  increment(){
@@ -46,11 +50,26 @@ class Counter extends Component {
         this.increment()
     }
 
+    // render() {
+    //     return (
+    //     <div>
+    //         <div>
+    //             count: {this.state.count}
+    //         </div>
+    //         {/* normal setstate */}
+    //         {/* <button onClick={()=>{this.increment()}}>Increment</button> */}
+    //         {/* complex Set state */}
+    //         <button onClick={()=>{this.incrementFive()}}>Increment</button>
+    //     </div>
+    //     )
+    // }
     render() {
+        // destructuring state
+        const {count}= this.state;
         return (
         <div>
             <div>
-                count: {this.state.count}
+                count: {count}
             </div>
             {/* normal setstate */}
             {/* <button onClick={()=>{this.increment()}}>Increment</button> */}

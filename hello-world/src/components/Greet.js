@@ -14,11 +14,29 @@ import React from "react";
 
 
 // functional component using props
+// const Greet=(props)=>{
+//     return <div>
+//         <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+//         {props.children}
+//     </div>
+// }
+
+
+//prop destructuring
+// const Greet=({name,heroName, children})=>{
+//     return <div>
+//         <h1>Hello {name} a.k.a {heroName}</h1>
+//         {children}
+//     </div>
+// }
+
 const Greet=(props)=>{
-    return <div>
-        <h1>Hello {props.name} a.k.a {props.heroName}</h1>
-        {props.children}
-    </div>
-}
+    // another way to destructure props
+    const {name,heroName, children}= props
+        return <div>
+            <h1>Hello {name} a.k.a {heroName}</h1>
+            {children}
+        </div>
+    }
 
 export default Greet
