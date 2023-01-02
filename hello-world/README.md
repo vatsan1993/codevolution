@@ -23,3 +23,7 @@ setState is async method . So log statements will execute before . To run a func
 React Groups multiple setState methods and considers as a singe call.which will give weird results. so we pass an arrow function to the setState that return another object. This callback function will have access to previous state and the second value is props. If the state changes based on the props we can update it here
 
 props and states can be destructured.
+
+Event Handling and binding.
+In class components we need to bind the events as the this keyword acts weirdly
+Check how this keyword work in js
